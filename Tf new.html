@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIGO FORCE - Mega Battle Royale</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #e2e8f0; /* slate-200 */
+        }
+        /* Custom neon-like shadow for accent elements */
+        .neon-shadow {
+            box-shadow: 0 0 5px #a3e635, 0 0 10px #a3e635, 0 0 15px #a3e635;
+        }
+        .text-shadow {
+            text-shadow: 0 0 8px rgba(163, 230, 53, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="bg-slate-800/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-700">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <h1 class="text-3xl font-extrabold text-white">
+                TRIGO <span class="text-lime-400">FORCE</span>
+            </h1>
+            <a href="#register" class="bg-lime-500 text-slate-900 font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-lime-400 hover:shadow-lime-500/50 transition duration-300">
+                Register Now
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="relative overflow-hidden pt-24 pb-32">
+            <!-- Background glow -->
+            <div class="absolute -top-1/2 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl bg-lime-900/30 blur-3xl rounded-full z-0"></div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="text-lime-400 text-shadow font-bold uppercase tracking-widest">The Yearly Showdown is Here</h2>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mt-4 mb-6">
+                    MEGA SQUAD <br> BATTLE ROYALE
+                </h1>
+                <p class="text-3xl md:text-4xl font-bold text-white mb-10">
+                    Total Prize Pool: <span class="text-lime-400 text-shadow">₹60,000</span>
+                </p>
+                <a href="#register" class="bg-lime-500 text-slate-900 font-bold py-4 px-10 text-lg rounded-lg shadow-lg hover:bg-lime-400 hover:shadow-lime-500/50 transition duration-300 transform hover:scale-105">
+                    Claim Your Slot
+                </a>
+                <!-- Placeholder for a hero image -->
+                <div class="mt-16">
+                    <img src="https://placehold.co/1200x600/0f172a/a3e635?text=TRIGO+FORCE+ESPORTS&font=inter" 
+                         alt="Trigo Force Esports Tournament" 
+                         class="rounded-xl shadow-2xl w-full max-w-5xl mx-auto border-4 border-slate-700">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing & Offers Section -->
+        <section id="offers" class="bg-slate-800 py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-white text-center mb-12">
+                    Register Now & Save
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    
+                    <!-- Standard Price Card -->
+                    <div class="bg-slate-900 p-8 rounded-xl shadow-2xl border-2 border-lime-500 neon-shadow transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold text-center text-white mb-4">PER-PLAYER ENTRY</h3>
+                        <div class="text-center my-4">
+                            <span class="text-5xl font-extrabold text-white">₹399</span>
+                            <span class="text-2xl font-bold text-gray-500 line-through ml-2">₹1299</span>
+                        </div>
+                        <p class="text-lime-400 text-center font-bold text-lg">LIMITED TIME OFFER</p>
+                        <a href="#register" class="block w-full text-center bg-lime-500 text-slate-900 font-bold py-3 px-6 rounded-lg text-lg hover:bg-lime-400 transition duration-300 mt-8">
+                            Register
+                        </a>
+                    </div>
+                    
+                    <!-- Free Entry Card -->
+                    <div class="bg-slate-900 p-8 rounded-xl shadow-2xl border-2 border-slate-700 transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-bold text-center text-white mb-4">PLAY FOR FREE!</h3>
+                        <div class="text-center my-4">
+                             <span class="text-5xl font-extrabold text-white">₹0</span>
+                        </div>
+                        <p class="text-lg text-slate-300 text-center mt-4">
+                            Register your 5-friend squad (or refer 5 friends who pay) and you can
+                            <span class="text-lime-400 font-bold">join for free!</span>
+                        </p>
+                        <p class="text-sm text-gray-500 text-center mt-2">*(Free entry granted via refund after your 5 referrals successfully register).*</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Pool Section -->
+        <section id="prizes" class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-white text-center mb-12">
+                    Win <span class="text-lime-400 text-shadow">Big</span>
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <!-- 1st Place -->
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-xl text-center border border-slate-700">
+                        <p class="text-xl font-bold text-lime-400 uppercase tracking-wider">1st Place</p>
+                        <p class="text-6xl font-extrabold text-white my-4">₹30,000</p>
+                    </div>
+                    
+                    <!-- 2nd Place -->
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-xl text-center border border-slate-700">
+                        <p class="text-xl font-bold text-slate-300 uppercase tracking-wider">2nd Place</p>
+                        <p class="text-5xl font-extrabold text-white my-4">₹20,000</p>
+                    </div>
+                    
+                    <!-- 3rd Place -->
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-xl text-center border border-slate-700">
+                        <p class="text-xl font-bold text-yellow-600 uppercase tracking-wider">3rd Place</p>
+                        <p class="text-4xl font-extrabold text-white my-4">₹10,000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slots Section -->
+        <section id="slots" class="bg-slate-800 py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+                <h2 class="text-4xl font-extrabold text-white mb-6">
+                    <span class="text-lime-400 text-shadow" id="slots-total-text">576</span> SLOTS. ONE CHAMPION.
+                </h2>
+                <p class="text-lg text-slate-300 mb-8">Slots are filling up fast. Don't miss your chance to compete against the best.</p>
+                <!-- Dynamic Progress Bar -->
+                <div class="w-full bg-slate-700 rounded-full h-8 border-2 border-slate-600">
+                    <div id="slots-progress-bar" class="bg-lime-500 h-full rounded-full text-right pr-2 text-sm font-bold text-slate-900 leading-8" style="width: 0%">
+                        <span id="slots-filled-text">0 / 576</span>
+                    </div>
+                </div>
+                <p id="slots-percentage-text" class="text-lime-400 font-semibold mt-4">0% SLOTS FILLED!</p>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="register" class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+                <h2 class="text-4xl font-extrabold text-white text-center mb-6">
+                    Register Your Squad
+                </h2>
+                <p class="text-center text-lg text-slate-300 mb-10">
+                    Register your 4-player squad. Price is <span class="font-bold text-white">₹99 per player</span>.
+                    <br>
+                    <span class="font-bold text-lime-400">Total: ₹399 per squad.</span>
+                </p>
+                <form id="regForm" class="bg-slate-800 p-8 md:p-12 rounded-xl shadow-2xl space-y-6 border border-slate-700">
+                    
+                    <!-- Squad Details -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="squadName" class="block text-sm font-medium text-slate-300 mb-2">Squad Name (Required)</label>
+                            <input type="text" id="squadName" name="squadName" required
+                                   class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Your Contact Email (Required)</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                        </div>
+                    </div>
+
+                    <!-- Pair 1 -->
+                    <div class="border-t border-slate-700 pt-6">
+                        <h4 class="text-xl font-semibold text-lime-400 mb-4">Pair 1</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="playerName1" class="block text-sm font-medium text-slate-300 mb-2">Player 1 Name (IGN)</label>
+                                <input type="text" id="playerName1" name="playerName1" required 
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                            <div>
+                                <label for="playerUID1" class="block text-sm font-medium text-slate-300 mb-2">Player 1 UID (Game ID)</label>
+                                <input type="text" id="playerUID1" name="playerUID1" required
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                        </div>
+                         <div class="grid md:grid-cols-2 gap-6 mt-4">
+                            <div>
+                                <label for="playerName2" class="block text-sm font-medium text-slate-300 mb-2">Player 2 Name (IGN)</label>
+                                <input type="text" id="playerName2" name="playerName2" required 
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                            <div>
+                                <label for="playerUID2" class="block text-sm font-medium text-slate-300 mb-2">Player 2 UID (Game ID)</label>
+                                <input type="text" id="playerUID2" name="playerUID2" required
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pair 2 -->
+                    <div class="border-t border-slate-700 pt-6">
+                        <h4 class="text-xl font-semibold text-lime-400 mb-4">Pair 2</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="playerName3" class="block text-sm font-medium text-slate-300 mb-2">Player 3 Name (IGN)</label>
+                                <input type="text" id="playerName3" name="playerName3" required 
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                            <div>
+                                <label for="playerUID3" class="block text-sm font-medium text-slate-300 mb-2">Player 3 UID (Game ID)</label>
+                                <input type="text" id="playerUID3" name="playerUID3" required
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                        </div>
+                         <div class="grid md:grid-cols-2 gap-6 mt-4">
+                            <div>
+                                <label for="playerName4" class="block text-sm font-medium text-slate-300 mb-2">Player 4 Name (IGN)</label>
+                                <input type="text" id="playerName4" name="playerName4" required 
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                            <div>
+                                <label for="playerUID4" class="block text-sm font-medium text-slate-300 mb-2">Player 4 UID (Game ID)</label>
+                                <input type="text" id="playerUID4" name="playerUID4" required
+                                       class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="formMessage" class="mt-4 text-center"></div>
+
+                    <button type="submit" class="w-full bg-lime-500 text-slate-900 font-extrabold py-4 px-6 rounded-lg text-xl hover:bg-lime-400 hover:shadow-lime-500/50 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 focus:ring-offset-slate-800">
+                        SUBMIT SQUAD REGISTRATION
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-10 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500">
+            <p>&copy; 2025 TRIGO FORCE Esports. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Tournament rules and conditions apply.</p>
+        </div>
+    </footer>
+
+    <!-- Site JavaScript -->
+    <script>
+        // <!-- =================================================================== -->
+        // <!-- ===== EDIT SLOT COUNT HERE ===== -->
+        // <!-- 
+        //     To update the slots, just change the number for SLOTS_TAKEN.
+        //     For example, if 150 people have registered, change it to:
+        //     const SLOTS_TAKEN = 150;
+        // -->
+        const SLOTS_TAKEN = 138; 
+        // <!-- =================================================================== -->
+
+        const SLOTS_TOTAL = 576; // Total slots available (144 squads * 4 players)
+
+        /**
+         * This function runs when the page loads.
+         * It updates the progress bar and text based on the numbers above.
+         * NOTE: This counts *individual player slots*, not squads.
+         */
+        function updateSlotCount() {
+            // Get the elements from the page
+            const progressBar = document.getElementById('slots-progress-bar');
+            const filledText = document.getElementById('slots-filled-text');
+            const percentageText = document.getElementById('slots-percentage-text');
+            const totalText = document.getElementById('slots-total-text');
+
+            if (!progressBar || !filledText || !percentageText || !totalText) {
+                console.error("Slot counter elements not found. Check the IDs.");
+                return;
+            }
+
+            // Calculate percentage
+            const percentage = (SLOTS_TAKEN / SLOTS_TOTAL) * 100;
+
+            // Update the HTML
+            totalText.innerText = SLOTS_TOTAL;
+            progressBar.style.width = `${percentage.toFixed(2)}%`;
+            filledText.innerText = `${SLOTS_TAKEN} / ${SLOTS_TOTAL}`;
+            percentageText.innerText = `${Math.ceil(percentage)}% PLAYER SLOTS FILLED!`;
+        }
+
+        /**
+         * This function handles the registration form submission.
+         * It opens WhatsApp with a pre-filled message.
+         */
+        const regForm = document.getElementById('regForm');
+        const formMessage = document.getElementById('formMessage');
+        const whatsappNumber = '919544747652'; // Your number with country code
+
+        regForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevents the form from submitting normally
+            
+            // Get form values
+            const squadName = document.getElementById('squadName').value;
+            const email = document.getElementById('email').value;
+            
+            const playerName1 = document.getElementById('playerName1').value;
+            const playerUID1 = document.getElementById('playerUID1').value;
+            const playerName2 = document.getElementById('playerName2').value;
+            const playerUID2 = document.getElementById('playerUID2').value;
+            
+            const playerName3 = document.getElementById('playerName3').value;
+            const playerUID3 = document.getElementById('playerUID3').value;
+            const playerName4 = document.getElementById('playerName4').value;
+            const playerUID4 = document.getElementById('playerUID4').value;
+
+
+            // Show a loading message
+            formMessage.innerHTML = '<p class="text-lime-400">Preparing your registration... Redirecting to WhatsApp.</p>';
+            
+            // Create the message for WhatsApp
+            const message = `
+*New TRIGO FORCE SQUAD Registration*
+--------------------------------
+*Squad Name:* ${squadName}
+*Contact Email:* ${email}
+
+*--- Pair 1 ---*
+*P1:* ${playerName1}
+*P1 UID:* ${playerUID1}
+*P2:* ${playerName2}
+*P2 UID:* ${playerUID2}
+
+*--- Pair 2 ---*
+*P3:* ${playerName3}
+*P3 UID:* ${playerUID3}
+*P4:* ${playerName4}
+*P4 UID:* ${playerUID4}
+--------------------------------
+Please confirm our squad slot. (Total: ₹1596)
+            `;
+            
+            // Encode the message for a URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Create the WhatsApp URL
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappURL, '_blank');
+
+            // Optionally clear the message after a delay
+            setTimeout(() => {
+                formMessage.innerHTML = '<p class="text-green-500">Please send the message in WhatsApp to complete your registration.</p>';
+            }, 3000);
+        });
+
+        // Run the slot counter update when the page is loaded
+        document.addEventListener('DOMContentLoaded', updateSlotCount);
+    </script>
+
+</body>
+</html>
+
+
